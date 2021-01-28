@@ -1,0 +1,707 @@
+{
+  "contractName": "Price",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_price",
+          "type": "int256"
+        }
+      ],
+      "name": "setPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    },
+    {
+      "inputs": [],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.9+commit.3e3065ac\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"price\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"_price\",\"type\":\"int256\"}],\"name\":\"setPrice\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/wei/Desktop/poa-bridge/sokol/contracts/price.sol\":\"Price\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/wei/Desktop/poa-bridge/sokol/contracts/price.sol\":{\"keccak256\":\"0x2dcf3bf0dba16362dd559d60495174bec0e7e93002758e3706136b3199235ac6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8172d0deef0d67fef3e736718a5a0f35d98b9307b6b4a1f9e6f3694ee88508b1\",\"dweb:/ipfs/QmdmHYR1AytgMcogDMW17bv1thM3A7hdj9Yc1rTgQccJtc\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610117806100206000396000f3fe60806040526004361060305760003560e01c806398d5fdca146035578063a035b1fe14605d578063f7a30806146085575b600080fd5b348015604057600080fd5b50604760c4565b6040518082815260200191505060405180910390f35b348015606857600080fd5b50606f60cd565b6040518082815260200191505060405180910390f35b60ae60048036036020811015609957600080fd5b810190808035906020019092919050505060d3565b6040518082815260200191505060405180910390f35b60008054905090565b60005481565b60008160008190555091905056fea26469706673582212200ee0db262d253030e48277c38b3612dbd4d8f7e28f4245ea27a1818adcd0a63e64736f6c63430006090033",
+  "deployedBytecode": "0x60806040526004361060305760003560e01c806398d5fdca146035578063a035b1fe14605d578063f7a30806146085575b600080fd5b348015604057600080fd5b50604760c4565b6040518082815260200191505060405180910390f35b348015606857600080fd5b50606f60cd565b6040518082815260200191505060405180910390f35b60ae60048036036020811015609957600080fd5b810190808035906020019092919050505060d3565b6040518082815260200191505060405180910390f35b60008054905090565b60005481565b60008160008190555091905056fea26469706673582212200ee0db262d253030e48277c38b3612dbd4d8f7e28f4245ea27a1818adcd0a63e64736f6c63430006090033",
+  "immutableReferences": {},
+  "sourceMap": "82:229:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "82:229:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;231:78;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;103:19;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;129:96;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;231:78;272:6;297:5;;290:12;;231:78;:::o;103:19::-;;;;:::o;129:96::-;186:6;212;204:5;:14;;;;129:96;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\n// pragma solidity 0.6.9;\npragma solidity 0.6.9;\n\ncontract Price {\n    int256 public price;\n\n    function setPrice(int256 _price) public payable returns (int256) {\n        price = _price;\n    }\n\n    function getPrice() public view returns (int256) {\n        return price;\n    }\n}\n",
+  "sourcePath": "/Users/wei/Desktop/poa-bridge/sokol/contracts/price.sol",
+  "ast": {
+    "absolutePath": "/Users/wei/Desktop/poa-bridge/sokol/contracts/price.sol",
+    "exportedSymbols": {
+      "Price": [
+        57
+      ]
+    },
+    "id": 58,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "58:22:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 57,
+        "linearizedBaseContracts": [
+          57
+        ],
+        "name": "Price",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "a035b1fe",
+            "id": 36,
+            "mutability": "mutable",
+            "name": "price",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 57,
+            "src": "103:19:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "int256",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 47,
+              "nodeType": "Block",
+              "src": "194:31:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 45,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 43,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 36,
+                      "src": "204:5:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 44,
+                      "name": "_price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 38,
+                      "src": "212:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "204:14:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 46,
+                  "nodeType": "ExpressionStatement",
+                  "src": "204:14:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "f7a30806",
+            "id": 48,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPrice",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 38,
+                  "mutability": "mutable",
+                  "name": "_price",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 48,
+                  "src": "147:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 37,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:15:1"
+            },
+            "returnParameters": {
+              "id": 42,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 48,
+                  "src": "186:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "186:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "185:8:1"
+            },
+            "scope": 57,
+            "src": "129:96:1",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 55,
+              "nodeType": "Block",
+              "src": "280:29:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 53,
+                    "name": "price",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 36,
+                    "src": "297:5:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 52,
+                  "id": 54,
+                  "nodeType": "Return",
+                  "src": "290:12:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "98d5fdca",
+            "id": 56,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "248:2:1"
+            },
+            "returnParameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 56,
+                  "src": "272:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:8:1"
+            },
+            "scope": 57,
+            "src": "231:78:1",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 58,
+        "src": "82:229:1"
+      }
+    ],
+    "src": "58:254:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/wei/Desktop/poa-bridge/sokol/contracts/price.sol",
+      "exportedSymbols": {
+        "Price": [
+          57
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".9"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "58:22:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            57
+          ],
+          "name": "Price",
+          "scope": 58
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "a035b1fe",
+              "mutability": "mutable",
+              "name": "price",
+              "overrides": null,
+              "scope": 57,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "int256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "int256",
+                  "type": "int256"
+                },
+                "id": 35,
+                "name": "ElementaryTypeName",
+                "src": "103:6:1"
+              }
+            ],
+            "id": 36,
+            "name": "VariableDeclaration",
+            "src": "103:19:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "f7a30806",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setPrice",
+              "overrides": null,
+              "scope": 57,
+              "stateMutability": "payable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_price",
+                      "overrides": null,
+                      "scope": 48,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 37,
+                        "name": "ElementaryTypeName",
+                        "src": "147:6:1"
+                      }
+                    ],
+                    "id": 38,
+                    "name": "VariableDeclaration",
+                    "src": "147:13:1"
+                  }
+                ],
+                "id": 39,
+                "name": "ParameterList",
+                "src": "146:15:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 48,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 40,
+                        "name": "ElementaryTypeName",
+                        "src": "186:6:1"
+                      }
+                    ],
+                    "id": 41,
+                    "name": "VariableDeclaration",
+                    "src": "186:6:1"
+                  }
+                ],
+                "id": 42,
+                "name": "ParameterList",
+                "src": "185:8:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "int256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 36,
+                              "type": "int256",
+                              "value": "price"
+                            },
+                            "id": 43,
+                            "name": "Identifier",
+                            "src": "204:5:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 38,
+                              "type": "int256",
+                              "value": "_price"
+                            },
+                            "id": 44,
+                            "name": "Identifier",
+                            "src": "212:6:1"
+                          }
+                        ],
+                        "id": 45,
+                        "name": "Assignment",
+                        "src": "204:14:1"
+                      }
+                    ],
+                    "id": 46,
+                    "name": "ExpressionStatement",
+                    "src": "204:14:1"
+                  }
+                ],
+                "id": 47,
+                "name": "Block",
+                "src": "194:31:1"
+              }
+            ],
+            "id": 48,
+            "name": "FunctionDefinition",
+            "src": "129:96:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "98d5fdca",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getPrice",
+              "overrides": null,
+              "scope": 57,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 49,
+                "name": "ParameterList",
+                "src": "248:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 56,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 50,
+                        "name": "ElementaryTypeName",
+                        "src": "272:6:1"
+                      }
+                    ],
+                    "id": 51,
+                    "name": "VariableDeclaration",
+                    "src": "272:6:1"
+                  }
+                ],
+                "id": 52,
+                "name": "ParameterList",
+                "src": "271:8:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 52
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 36,
+                          "type": "int256",
+                          "value": "price"
+                        },
+                        "id": 53,
+                        "name": "Identifier",
+                        "src": "297:5:1"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "Return",
+                    "src": "290:12:1"
+                  }
+                ],
+                "id": 55,
+                "name": "Block",
+                "src": "280:29:1"
+              }
+            ],
+            "id": 56,
+            "name": "FunctionDefinition",
+            "src": "231:78:1"
+          }
+        ],
+        "id": 57,
+        "name": "ContractDefinition",
+        "src": "82:229:1"
+      }
+    ],
+    "id": 58,
+    "name": "SourceUnit",
+    "src": "58:254:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.9+commit.3e3065ac.Emscripten.clang"
+  },
+  "networks": {
+    "77": {
+      "events": {},
+      "links": {},
+      "address": "0xd07aEE14c8110f3cE7Cbc9Da782685811fC745D6",
+      "transactionHash": "0x656f54d891113ee8e844153ec5665924e5d1a2cd389d2eb539d5644b1bce5aa1"
+    }
+  },
+  "schemaVersion": "3.3.3",
+  "updatedAt": "2021-01-28T05:03:26.879Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
